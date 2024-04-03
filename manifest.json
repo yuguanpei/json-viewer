@@ -1,0 +1,25 @@
+{
+  "name": "JSON Viewer",
+  "version": "1.0.0",
+  "manifest_version": 3,
+  "description": "JSON Viewer based on Monaco Editor",
+  "homepage_url": "https://github.com/yuguanpei/json-viewer",
+  "minimum_chrome_version": "88",
+  "icons": {
+    "96": "logo.png"
+  },
+  "permissions": ["storage"],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "run_at": "document_start"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["monaco-editor/*", "index.html", "index.js"],
+      "matches": ["*://*/*"]
+    }
+  ]
+}
