@@ -1,9 +1,9 @@
 {
-  "name": "JSON Viewer",
-  "version": "1.0.0",
+  "name": "VSCode Viewer",
+  "version": "1.0.1",
   "manifest_version": 3,
-  "description": "JSON Viewer based on Monaco Editor",
-  "homepage_url": "https://github.com/yuguanpei/json-viewer",
+  "description": "VSCode Viewer based on Monaco Editor",
+  "homepage_url": "https://github.com/yuguanpei/vscode-viewer",
   "minimum_chrome_version": "88",
   "icons": {
     "96": "logo.png"
@@ -12,6 +12,7 @@
   "content_scripts": [
     {
       "matches": ["<all_urls>"],
+      "exclude_matches": ["*://raw.githubusercontent.com/*"],
       "js": ["content.js"],
       "run_at": "document_start"
     }

@@ -1,6 +1,7 @@
-# JSON Viewer
+# VSCode Viewer
 
-JSON viewer based on Monaco Editor.
+VSCode viewer based on Monaco Editor.
 
+![demo](demo.png)
 ![light](light.png)
 ![dark](dark.png)
